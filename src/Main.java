@@ -1,13 +1,19 @@
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.printf("Hello and welcome!");
+        Random random = new Random();
+        int randomNumber = random.nextInt(100) + 1;
 
-        for (int i = 1; i <= 5; i++) {
+        Scanner scanner = new Scanner(System.in);
+        int attempts = 0;
+        boolean isCorrect = false;
 
+        System.out.print("Guess the number between 1 and 100: ");
+        int userGuess = scanner.nextInt();
 
-            System.out.println("i = " + i);
-        }
     }
 }
